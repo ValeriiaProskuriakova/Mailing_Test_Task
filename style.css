@@ -397,6 +397,9 @@ footer .btn_save{
     main .general_sub_wrapper, main .websites_sub_wrapper, main .search_sub_wrapper, main .ads_sub_wrapper, main .telegram_sub_wrapper{
         width: 42em;
     }
+    main .details{
+      font-size:1em;
+    }
     .popup .popuptext {
         bottom: -83%;
     }
