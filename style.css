@@ -438,9 +438,6 @@ footer .btn_save{
    main .telegram_wrapper .telegram_content li{
        height: 2.5em;
    }
-   main .telegram_wrapper .telegram_content .checkbox_wrapper {
-    padding: 0.6em;
-   }
    main .general_wrapper .general_content li>p, main .general_wrapper .general_content .messages, main .websites_wrapper .websites_content li>p, main .search_wrapper .search_content div>p, main .ads_wrapper .ads_content .messages, main .telegram_wrapper .telegram_content li>p{
     font-size: 0.6em;
    }
