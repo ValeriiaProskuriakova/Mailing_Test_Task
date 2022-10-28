@@ -25,6 +25,11 @@
   btnNo.addEventListener('click', () => {
     closeModal()
   })
+  modalSave.addEventListener("click", (e) => {
+  if(e.target === modalSave) {
+      closeModal()
+    }
+  })
   const message = {
     success: 'Спасибо, ваш ответ записан',
     error:'Что-то пошло не так...',
@@ -55,7 +60,6 @@
 /*--------Modal Details ---------*/
 
   let btnDetails = document.querySelectorAll(".details");
-  console.log(btnDetails)
   let modalDetails = document.querySelector(".modal_details");
   let crossDetails = document.querySelector(".modal_details_close");
 
@@ -73,13 +77,22 @@
   crossDetails.addEventListener('click', () => {
     closeDetailsModal()
   })
+  modalDetails.addEventListener("click", (e) => {
+  if(e.target === modalDetails) {
+      closeDetailsModal()
+    }
+  })
 
 /*--------Popup function---------*/
 
-function myFunction() {
+function Popup() {
   let popup = document.getElementById("myPopup");
   popup.classList.toggle("show");
+  document.body.addEventListener('click', () => {
+    popup.classList.remove("show");
+  });
 }
+
 
 /*--------Select functionality---------*/
 
@@ -128,13 +141,13 @@ for (i = 0; i < l; i++) {
     b.appendChild(c);
   }
   x[i].appendChild(b);
-  a.addEventListener("click", function(e) {
+  a.addEventListener("mouseover", function(e) {
       /*when the select box is clicked, close any other select boxes,
       and open/close the current select box:*/
       e.stopPropagation();
       closeAllSelect(this);
       this.nextSibling.classList.toggle("select-hide");
-      this.classList.toggle("select-arrow-active");
+      //this.classList.toggle("select-arrow-active");
     });
 }
 function closeAllSelect(elmnt) {

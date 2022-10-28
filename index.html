@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="wrapper">
     <header>
         <h1>Управление рассылками</h1>
         <p>Здравствуйте, Андрей. Выберите, категории писем, от которых хотите отписаться. Но пожалуйста, исключите только те категории, которые действительно вас не интересуют. Мы обещаем слать только полезные письма где &#128522;</p>
@@ -41,7 +42,7 @@
                 <li>
                     <div class="general_sub_wrapper">
                         <p>Личные сообщения</p>
-                        <div class="popup" onclick="myFunction()"><img src="./img/info.png">
+                        <div class="popup" onmouseover="Popup()"><img src="./img/info.png">
                           <span class="popuptext" id="myPopup">Письма об обновлениях и улучшениях платформы</span>
                         </div>
                     </div>
@@ -199,8 +200,8 @@
                 </li>
             </ul>
         </article>
-        
-        <!-----Modals---->
+
+        <!---Modals---->
         <div class="modal_save">
             <div class="modal__dialog">
                 <div class="modal__content">
@@ -228,7 +229,8 @@
             <button class="btn btn_save">Сохранить изменения</button>
         </section>
     </footer>
-
+</div>
     <script src="script.js"></script>
+
 </body>
 </html>
