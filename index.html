@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <!--CSS Styles -->
+    <link rel="stylesheet" href="./style.css">
+    <!--Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Управление рассылками</h1>
+        <p>Здравствуйте, Андрей. Выберите, категории писем, от которых хотите отписаться. Но пожалуйста, исключите только те категории, которые действительно вас не интересуют. Мы обещаем слать только полезные письма где &#128522;</p>
+    </header>
+    <main>
+        <!-- Общие уведомления -->
+        <article class="general_wrapper">
+            <h2>Общие уведомления</h2>
+            <ul class="general_content">
+                <li>
+                    <div class="general_sub_wrapper">
+                        <p>Приветственная серия</p>
+                    </div>
+                    <input type="checkbox" name="checkbox" class="checkbox" id="letter" value="OK" checked>
+                    <label for="letter"></label>
+                    <p>4 полезных и емких письма в течение месяца</p>
+                </li>
+                <li>
+                    <div class="general_sub_wrapper">
+                        <p>Образовательные вебинары</p>
+                    </div>
+                    <input type="checkbox" name="checkbox" class="checkbox" id="webinar" value="OK">
+                    <label for="webinar"></label>
+                    <p>Бесплатные вебинары проходят 1 раз в 2 недели. Вы будете получать 2 письма с напоминанием о предстоящем вебинаре</p>
+                </li>
+                <li>
+                    <div class="general_sub_wrapper">
+                        <p>Личные сообщения</p>
+                        <div class="popup" onclick="myFunction()"><img src="./img/info.png">
+                          <span class="popuptext" id="myPopup">Письма об обновлениях и улучшениях платформы</span>
+                        </div>
+                    </div>
+                    <input type="checkbox" name="checkbox" class="checkbox" id="personal" value="OK" checked>
+                    <label for="personal"></label>
+                    <div class="messages">
+                        <div class="custom-select">
+                            <select>
+                              <option value="mgnovenno">Мгновенно</option>
+                              <option value="1_raz">1 раз в день</option>
+                              <option value="otkl">Отключить</option>
+                            </select>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </article>
+        <!-- Уведомление по Сайтам -->
+        <article class="websites_wrapper">
+            <h2>Уведомление по Сайтам</h2>
+            <ul class="websites_content">
+                <li>
+                <div class="websites_sub_wrapper">
+                    <p>Новости</p>
+                </div>
+                <input type="checkbox" name="checkbox" class="checkbox" id="news" value="OK">
+                <label for="news"></label>
+                <p></p>
+                </li>
+            </ul>
+        </article>
+        <!-- Поисковые агенты -->
+        <article class="search_wrapper">
+            <h2>Поисковые агенты</h2>
+            <section class="search_content">
+                <!-- Бизнес -->
+                <h3>Бизнес</h3>
+                <div class="search_content_section">
+                    <div class="search_sub_wrapper">
+                            <ul >
+                                <li class="search_sub_wrapper_elem"><span>Seo</span> <span class="search_close">&times;</span></li>
+                                <li class="search_sub_wrapper_elem"><span>Продвижение</span><span class="search_close">&times;</span></li>
+                                <li class="search_sub_wrapper_elem"><span>Аналитика</span><span class="search_close">&times;</span></li>
+                            </ul>
+                            <button class="details">Детали</button>
+                    </div>
+                    <div class="checkbox_wrapper">
+                        <input type="checkbox" name="checkbox" class="checkbox" id="business" value="OK" checked>
+                        <label for="business"></label>
+                    </div>
+                    <p>Поисковый агент присылает 1 письмо в неделю и только при условии, что найдены новые площадки</p>
+                </div>
+                <!-- 1 2 3  -->
+                <h3>123</h3>
+                <div class="search_content_section">
+                    <div class="search_sub_wrapper">
+                            <ul>
+                                <li class="search_sub_wrapper_elem"><span>Seo</span> <div class="search_close">&times;</div></li>
+                                <li class="search_sub_wrapper_elem"><span>Продвижение</span><span class="search_close">&times;</span></li>
+                            </ul>
+                            <button class="details">Детали</button>
+                    </div>
+                    <div class="checkbox_wrapper">
+                    <input type="checkbox" name="checkbox" class="checkbox" id="onetwo" value="OK">
+                    <label for="onetwo"></label>
+                    </div>
+                    <p></p>
+                </div>
+                <!-- SEO -->
+                <h3>SEO</h3>
+                <div class="search_content_section">
+                    <div class="search_sub_wrapper">
+                            <ul>
+                                <li class="search_sub_wrapper_elem"><span>Seo</span> <span class="search_close">&times;</span></li>
+                                <li class="search_sub_wrapper_elem"><span>Продвижение</span><span class="search_close">&times;</span></li>
+                                <li class="search_sub_wrapper_elem"><span>Аналитика</span><span class="search_close">&times;</span></li>
+                            </ul>
+                            <button class="details">Детали</button>
+                    </div>
+                    <div class="checkbox_wrapper">
+                    <input type="checkbox" name="checkbox" class="checkbox" id="seo" value="OK">
+                    <label for="seo"></label>
+                    </div>
+                    <p></p>
+                </div>
+                <!-- Бирж ссылки -->
+                <h3>Бuрж ссылки</h3>
+                <div class="search_content_section">
+                    <div class="search_sub_wrapper">
+                            <ul>
+                                <li class="search_sub_wrapper_elem"><span>Биржи ссылок: Не обнаружен</span><span class="search_close">&times;</span></li>
+                            </ul>
+                            <button class="details">Детали</button>
+                    </div>
+                    <div class="checkbox_wrapper">
+                    <input type="checkbox" name="checkbox" class="checkbox" id="links" value="OK" checked>
+                    <label for="links"></label>
+                    </div>
+                    <p></p>
+                </div>
+            </section>
+        </article>
+        <!-- Рекламные компании -->
+        <article class="ads_wrapper">
+            <h2>Рекламные компании</h2>
+            <ul class="ads_content">
+                <li>
+                    <div class="ads_sub_wrapper">
+                        <p>Строительство домов в Украин</p>
+                    </div>
+                    <input type="checkbox" name="checkbox" class="checkbox" id="houses_first" value="OK" checked>
+                    <label for="houses_first"></label>
+                    <div class="messages">
+                    <div class="custom-select">
+                        <select >
+                          <option value="mgnovenno">Мгновенно</option>
+                          <option value="1_raz">1 раз в день</option>
+                          <option value="otkl">Отключить</option>
+                        </select>
+                    </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="ads_sub_wrapper">
+                        <p>Строительство домов в Украин</p>
+                    </div>
+                    <input type="checkbox" name="checkbox" class="checkbox" id="houses_second" value="OK">
+                    <label for="houses_second"></label>
+                    <div class="messages">
+                    <div class="custom-select">
+                        <select >
+                          <option value="mgnovenno">Мгновенно</option>
+                          <option value="1_raz">1 раз в день</option>
+                          <option value="otkl">Отключить</option>
+                        </select>
+                    </div>
+                    </div>
+                </li>
+
+            </ul>
+        </article>
+        <!-- Уведомления по Телеграму -->
+        <article class="telegram_wrapper">
+            <h2>Уведомления по Телеграму</h2>
+            <ul class="telegram_content">
+                <li>
+                    <div class="ads_sub_wrapper">
+                        <p>Новости</p>
+                    </div>
+                    <div class="checkbox_wrapper">
+                    <input type="checkbox" name="checkbox" class="checkbox" id="telegram" value="OK">
+                    <label for="telegram"></label>
+                    </div>
+                    <p></p>
+                </li>
+            </ul>
+        </article>
+        
+        <!-----Modals---->
+        <div class="modal_save">
+            <div class="modal__dialog">
+                <div class="modal__content">
+                    <div class="modal__close">&times;</div>
+                    <div class="modal__title">Вы уверены?</div>
+                    <div class="buttons_wrapper">
+                        <button class="btn btn_yes">ДА</button>
+                        <button class="btn btn_no">НЕТ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal_details">
+            <div class="modal_details_dialog">
+                <div class="modal_details_content">
+                    <div class="modal_details_close">&times;</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus iure dicta, odit a. Corrupti repellat illo rem tempore iste rerum molestiae beatae maiores eligendi commodi, obcaecati dignissimos, perferendis ipsa veniam.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <section class="footer_wrapper">
+            <button class="btn btn_default">По умолчанию</button>
+            <button class="btn btn_save">Сохранить изменения</button>
+        </section>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
