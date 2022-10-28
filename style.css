@@ -272,7 +272,7 @@ footer .btn_save{
 .select-selected:after {
   position: absolute;
   content: "";
-  top: 14px;
+  top: 1em;
   right: 10px;
   width: 0;
   height: 0;
@@ -421,6 +421,11 @@ footer .btn_save{
     }
     .custom-select{
       width:12em;
+    }
+    .select-selected:after{
+      top:1.2em;
+      border:4px solid transparent;
+      border-color: #858585 transparent transparent transparent;
     }
 }
 @media all and (max-width:500px){
