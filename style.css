@@ -41,13 +41,13 @@ main .general_wrapper .general_content, main .search_wrapper .search_content{
     justify-content: space-evenly;
 
 }
-main .general_wrapper .general_content li, main .websites_wrapper .websites_content li, main .search_wrapper .search_content .search_content_section, main .rekl_wrap .ads_content li, main .telegram_wrapper .telegram_content li{
+main .general_wrapper .general_content li, main .websites_wrapper .websites_content li, main .search_wrapper .search_content .search_content_section, main .rekl_wrap .rekl_content li, main .telegram_wrapper .telegram_content li{
     display: flex;
     justify-content: space-between;
     margin-bottom: 1em;
 }
 
-main .general_wrapper .general_content li>p, main .general_wrapper .general_content .messages, main .websites_wrapper .websites_content li>p, main .search_wrapper .search_content div>p, main .rekl_wrap .ads_content .messages, main .telegram_wrapper .telegram_content li>p{
+main .general_wrapper .general_content li>p, main .general_wrapper .general_content .messages, main .websites_wrapper .websites_content li>p, main .search_wrapper .search_content div>p, main .rekl_wrap .rekl_content .messages, main .telegram_wrapper .telegram_content li>p{
     width: 20.5em;
     font-size: 0.875em;
 }
@@ -407,7 +407,7 @@ footer .btn_save{
       margin:9em 0;
       max-width: 70em;
     }
-    main .general_wrapper .general_content, main .search_wrapper .search_content, main .websites_wrapper .websites_content, main .rekl_wrap .ads_content, main .telegram_wrapper .telegram_content{
+    main .general_wrapper .general_content, main .search_wrapper .search_content, main .websites_wrapper .websites_content, main .rekl_wrap .rekl_content, main .telegram_wrapper .telegram_content{
         font-size: 1.5em;
     }
     main .general_sub_wrapper, main .websites_sub_wrapper, main .search_sub_wrapper, main .ads_sub_wrapper, main .telegram_sub_wrapper{
@@ -468,7 +468,7 @@ footer .btn_save{
    main .telegram_wrapper .telegram_content li{
        height: 2.5em;
    }
-   main .general_wrapper .general_content li>p, main .general_wrapper .general_content .messages, main .websites_wrapper .websites_content li>p, main .search_wrapper .search_content div>p, main .rekl_wrap .ads_content .messages, main .telegram_wrapper .telegram_content li>p{
+   main .general_wrapper .general_content li>p, main .general_wrapper .general_content .messages, main .websites_wrapper .websites_content li>p, main .search_wrapper .search_content div>p, main .rekl_wrap .rekl_content .messages, main .telegram_wrapper .telegram_content li>p{
     font-size: 0.6em;
    }
     main .general_sub_wrapper, main .websites_sub_wrapper, main .search_sub_wrapper, main .ads_sub_wrapper, main .telegram_sub_wrapper {
