@@ -103,7 +103,14 @@ main .general_sub_wrapper>p{
 }
 
 /*--------Main Websites Styles------*/
-
+main .websites_sub_wrapper{
+  height:2em;
+  align-items:center;
+}
+main .websites_wrapper .checkbox_wrapper{
+    height: 2em;
+    align-items: center;
+}
 /*--------Main Search Style-------*/
 main .search_sub_wrapper{
     display: flex;
@@ -413,8 +420,11 @@ footer .btn_save{
     main .general_sub_wrapper, main .websites_sub_wrapper, main .search_sub_wrapper, main .ads_sub_wrapper, main .telegram_sub_wrapper{
         width: 42em;
     }
+    main .search_content .search_content_section:first-of-type p{
+        height: 3em;
+    }
     main .details{
-      font-size:1em;
+      font-size: 1em;
     }
     .popup .popuptext {
         bottom: -83%;
@@ -462,6 +472,9 @@ footer .btn_save{
    main .search_wrapper .search_content_section:last-of-type .checkbox_wrapper{
     padding: 0;
    }
+   main .search_wrapper .search_content_section:nth-of-type(2) .checkbox_wrapper{
+     padding: 1em 0;
+   }
    main .ads_sub_wrapper{
     align-items: center;
    }
@@ -477,9 +490,61 @@ footer .btn_save{
     .custom-select{
      width: 12em;
     }
+    .popup{
+      margin-top: 0.3em;
+      height: 12px;
+    }
+    .popup img{
+      width:12px;
+      height:12px;
+    }
+
 }
 @media all and (max-width:400px){
     body{
         margin: 1em;
     }
+    .wrapper{
+      max-width:37em;
+    }
+    main .search_wrapper .search_content div>p{
+      padding: 0
+    }
+    main .search_wrapper .search_content_section:first-of-type .checkbox_wrapper {
+      padding: 2.3em 0;
+    }
+    main .search_wrapper .search_content_section:nth-of-type(2) .checkbox_wrapper {
+      padding: 1.2em 0;
+    }
+    main .search_wrapper .search_content_section:nth-of-type(3) .checkbox_wrapper {
+      padding: 2.4em 0;
+    }
+    main .search_wrapper .search_content_section:last-of-type .checkbox_wrapper {
+      padding: 0.6em;
+    }
+
+    main .details {
+    font-size: 0.7em;
+    }
+    .custom-select {
+    width: 10em;
+  }
+  .checkbox+label::after{
+    width: 2.1em;
+    height: 1em;
+  }
+  .checkbox+label::before{
+    width: 0.8em;
+    height: 0.8em;
+    top:4px;
+  }
+  .checkbox:checked+label::before{
+    left: 10px;
+  }
+  main .general_wrapper .general_content li>p, main .general_wrapper .general_content .messages, main .websites_wrapper .websites_content li>p, main .search_wrapper .search_content div>p, main .rekl_wrap .rekl_content .messages, main .telegram_wrapper .telegram_content li>p {
+    font-size: 0.5em;
+  }
+  main .search_content .search_content_section:first-of-type p {
+    padding-top:3em;
+  }
 }

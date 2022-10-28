@@ -42,7 +42,7 @@
                 <li>
                     <div class="general_sub_wrapper">
                         <p>Личные сообщения</p>
-                        <div class="popup" onmouseover="Popup()"><img src="./img/info.png">
+                        <div class="popup" onmouseover="Popup()" ontouchstart="Popup()"><img src="./img/info.png">
                           <span class="popuptext" id="myPopup">Письма об обновлениях и улучшениях платформы</span>
                         </div>
                     </div>
@@ -68,8 +68,10 @@
                 <div class="websites_sub_wrapper">
                     <p>Новости</p>
                 </div>
-                <input type="checkbox" name="checkbox" class="checkbox" id="news" value="OK">
-                <label for="news"></label>
+                <div class="checkbox_wrapper">
+                  <input type="checkbox" name="checkbox" class="checkbox" id="news" value="OK">
+                  <label for="news"></label>
+                </div>
                 <p></p>
                 </li>
             </ul>

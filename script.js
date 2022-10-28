@@ -91,6 +91,9 @@ function Popup() {
   document.body.addEventListener('click', () => {
     popup.classList.remove("show");
   });
+  document.body.addEventListener('touchstart', () => {
+    popup.classList.remove("show");
+  });
 }
 
 
